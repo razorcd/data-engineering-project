@@ -1,9 +1,6 @@
 secrets/
 
-course1b/taxi+_zone_lookup.csv
-course1b/yellow_tripdata_2021-01.csv
 # .env
-data-engineering-zoomcamp/
 .ipynb_checkpoints
 *.json.gz
 *.log
