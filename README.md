@@ -1,8 +1,20 @@
 # GitHub events metrics
 
+<<<<<<< HEAD
 This is a Data Engineering project which creates a data pipeline for monitoring GitHub events in realtime (updates every 1 hr)
 Github updates the dataset to the last hour.
 Details: https://www.gharchive.org/
+=======
+## Final Project:
+https://github.com/razorcd/data-engineering-training/tree/main/final-project
+
+---
+
+## Start Postgres locally
+```
+docker run --rm -e POSTGRES_USER="root" -e POSTGRES_PASSWORD="root" -e POSTGRES_DB="ny_taxi" -v /home/cristiandugacicu/projects/personal/de-zoomcamp/course1b/postgres_data:/var/lib/postgresql/data -p 5432:5432 postgres:13
+```
+>>>>>>> 5c0f99167d774dec0fb84ba9ce441982d0789472
 
 Github receives ~100k events every hour. Events like `Push`, `PullRequest`, `Fork`, etc. To monitor the business is performing well we defined the following KPIs to be visible in realtime.
 
@@ -164,6 +176,7 @@ docker build -f Dockerfile -t spark_3_1_datamech .
 
 docker run --rm --name spark_3_1_datamech -it spark_3_1_datamech
 ```
+<<<<<<< HEAD
 
 
 ## Visualizations:
@@ -185,3 +198,9 @@ I used GCP Compute Engine as a virtual machine instance. All docker images runni
 ![image](https://user-images.githubusercontent.com/3721810/160302367-dd8f1186-2678-4bd1-8304-1e5c3089cae3.png)
 
 
+=======
+cd spark
+export SPARK_HOME=`pwd`
+export PYTHONPATH=$(ZIPS=("$SPARK_HOME"/python/lib/*.zip); IFS=:; echo "${ZIPS[*]}"):$PYTHONPATH
+```
+>>>>>>> 5c0f99167d774dec0fb84ba9ce441982d0789472
